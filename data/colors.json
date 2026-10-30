@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "total": 36,
+  "categories": [
+    {
+      "key": "blue",
+      "labelZh": "经典蓝系",
+      "labelEn": "Classic Blue",
+      "count": 6
+    },
+    {
+      "key": "green",
+      "labelZh": "清新绿系",
+      "labelEn": "Fresh Green",
+      "count": 6
+    },
+    {
+      "key": "red",
+      "labelZh": "古典红绿",
+      "labelEn": "Classic Red & Vintage",
+      "count": 6
+    },
+    {
+      "key": "purple",
+      "labelZh": "浪漫粉紫",
+      "labelEn": "Romantic Pink & Purple",
+      "count": 6
+    },
+    {
+      "key": "warm",
+      "labelZh": "暖阳大地",
+      "labelEn": "Warm Sun & Earth",
+      "count": 6
+    },
+    {
+      "key": "neutral",
+      "labelZh": "中性色系",
+      "labelEn": "Classic Neutral Tones",
+      "count": 6
+    }
+  ],
+  "colors": [
+    {
+      "code": "C-01",
+      "category": "blue",
+      "nameZh": "克莱因蓝",
+      "nameEn": "Klein Blue",
+      "quoteZh": "纯粹之蓝 通向无限",
+      "quoteEn": "A DEEPER TOMORROW",
+      "promptZh": "主题色：克莱因蓝（Klein Blue）。",
+      "promptEn": "Theme color: Klein Blue.",
+      "image": "images/colors/C-01.webp"
+    },
+    {
+      "code": "C-02",
+      "category": "blue",
+      "nameZh": "马若雷勒蓝",
+      "nameEn": "Majorelle Blue",
+      "quoteZh": "热带的阳光 也偏爱这抹蓝",
+      "quoteEn": "A BRIGHTER PLACE",
+      "promptZh": "主题色：马若雷勒蓝（Majorelle Blue）。",
+      "promptEn": "Theme color: Majorelle Blue.",
+      "image": "images/colors/C-02.webp"
+    },
+    {
+      "code": "C-03",
+      "category": "blue",
+      "nameZh": "普鲁士蓝",
+      "nameEn": "Prussian Blue",
+      "quoteZh": "理性的深邃 沉淀思想",
+      "quoteEn": "A CALMER MIND",
+      "promptZh": "主题色：普鲁士蓝（Prussian Blue）。",
+      "promptEn": "Theme color: Prussian Blue.",
+      "image": "images/colors/C-03.webp"
+    },
+    {
+      "code": "C-04",
+      "category": "blue",
+      "nameZh": "钴蓝",
+      "nameEn": "Cobalt Blue",
+      "quoteZh": "清晰而充满生命力 日常亦可动人",
+      "quoteEn": "A BRIGHTER DAY",
+      "promptZh": "主题色：钴蓝（Cobalt Blue）。",
+      "promptEn": "Theme color: Cobalt Blue.",
+      "image": "images/colors/C-04.webp"
+    },
+    {
+      "code": "C-05",
+      "category": "blue",
+      "nameZh": "群青",
+      "nameEn": "Ultramarine",
+      "quoteZh": "跨越时光的蓝 诗意而永恒",
+      "quoteEn": "A MORE POETIC LIFE",
+      "promptZh": "主题色：群青（Ultramarine）。",
+      "promptEn": "Theme color: Ultramarine.",
+      "image": "images/colors/C-05.webp"
+    },
+    {
+      "code": "C-06",
+      "category": "blue",
+      "nameZh": "孔雀蓝",
+      "nameEn": "Peacock Blue",
+      "quoteZh": "优雅而神秘 生而独特",
+      "quoteEn": "A RARER BEAUTY",
+      "promptZh": "主题色：孔雀蓝（Peacock Blue）。",
+      "promptEn": "Theme color: Peacock Blue.",
+      "image": "images/colors/C-06.webp"
+    },
+    {
+      "code": "C-07",
+      "category": "green",
+      "nameZh": "蒂芙尼蓝",
+      "nameEn": "Tiffany Blue",
+      "quoteZh": "把美好封存 让日常闪闪发光",
+      "quoteEn": "A SWEETER LIFE",
+      "promptZh": "主题色：蒂芙尼蓝（Tiffany Blue）。",
+      "promptEn": "Theme color: Tiffany Blue.",
+      "image": "images/colors/C-07.webp"
+    },
+    {
+      "code": "C-08",
+      "category": "green",
+      "nameZh": "湖蓝",
+      "nameEn": "Cerulean Blue",
+      "quoteZh": "盛夏的光影 让心也变得轻盈",
+      "quoteEn": "A LIGHTER SUMMER",
+      "promptZh": "主题色：湖蓝（Cerulean Blue）。",
+      "promptEn": "Theme color: Cerulean Blue.",
+      "image": "images/colors/C-08.webp"
+    },
+    {
+      "code": "C-09",
+      "category": "green",
+      "nameZh": "薄荷绿",
+      "nameEn": "Mint Green",
+      "quoteZh": "清新的气息 让生活更干净",
+      "quoteEn": "A FRESHER YOU",
+      "promptZh": "主题色：薄荷绿（Mint Green）。",
+      "promptEn": "Theme color: Mint Green.",
+      "image": "images/colors/C-09.webp"
+    },
+    {
+      "code": "C-10",
+      "category": "green",
+      "nameZh": "鼠尾草绿",
+      "nameEn": "Sage Green",
+      "quoteZh": "柔和的力量 让生活回归本真",
+      "quoteEn": "A KINDER HOME",
+      "promptZh": "主题色：鼠尾草绿（Sage Green）。",
+      "promptEn": "Theme color: Sage Green.",
+      "image": "images/colors/C-10.webp"
+    },
+    {
+      "code": "C-11",
+      "category": "green",
+      "nameZh": "祖母绿",
+      "nameEn": "Emerald Green",
+      "quoteZh": "深邃而珍贵 映照出更好的自己",
+      "quoteEn": "A MORE RADIANT YOU",
+      "promptZh": "主题色：祖母绿（Emerald Green）。",
+      "promptEn": "Theme color: Emerald Green.",
+      "image": "images/colors/C-11.webp"
+    },
+    {
+      "code": "C-12",
+      "category": "green",
+      "nameZh": "橄榄绿",
+      "nameEn": "Olive Green",
+      "quoteZh": "来自地中海的风 让生活更从容",
+      "quoteEn": "A RICHER LIFE",
+      "promptZh": "主题色：橄榄绿（Olive Green）。",
+      "promptEn": "Theme color: Olive Green.",
+      "image": "images/colors/C-12.webp"
+    },
+    {
+      "code": "C-13",
+      "category": "red",
+      "nameZh": "维罗纳绿",
+      "nameEn": "Veronese Green",
+      "quoteZh": "古典的优雅 穿越时光而来",
+      "quoteEn": "A MORE TIMELESS YOU",
+      "promptZh": "主题色：维罗纳绿（Veronese Green）。",
+      "promptEn": "Theme color: Veronese Green.",
+      "image": "images/colors/C-13.webp"
+    },
+    {
+      "code": "C-14",
+      "category": "red",
+      "nameZh": "森林绿",
+      "nameEn": "Forest Green",
+      "quoteZh": "林间的宁静 让心灵回归自然",
+      "quoteEn": "A QUIETER WORLD",
+      "promptZh": "主题色：森林绿（Forest Green）。",
+      "promptEn": "Theme color: Forest Green.",
+      "image": "images/colors/C-14.webp"
+    },
+    {
+      "code": "C-15",
+      "category": "red",
+      "nameZh": "朱砂红",
+      "nameEn": "Cinnabar Red",
+      "quoteZh": "东方的温度 点亮生活的诗意",
+      "quoteEn": "A WARMER TOMORROW",
+      "promptZh": "主题色：朱砂红（Cinnabar Red）。",
+      "promptEn": "Theme color: Cinnabar Red.",
+      "image": "images/colors/C-15.webp"
+    },
+    {
+      "code": "C-16",
+      "category": "red",
+      "nameZh": "中国红",
+      "nameEn": "Chinese Red",
+      "quoteZh": "喜悦的色彩 连接每一个团圆",
+      "quoteEn": "A BRIGHTER TOGETHER",
+      "promptZh": "主题色：中国红（Chinese Red）。",
+      "promptEn": "Theme color: Chinese Red.",
+      "image": "images/colors/C-16.webp"
+    },
+    {
+      "code": "C-17",
+      "category": "red",
+      "nameZh": "勃艮第红",
+      "nameEn": "Burgundy",
+      "quoteZh": "醇厚的时光 沉淀生活的品味",
+      "quoteEn": "A RICHER LIFE",
+      "promptZh": "主题色：勃艮第红（Burgundy）。",
+      "promptEn": "Theme color: Burgundy.",
+      "image": "images/colors/C-17.webp"
+    },
+    {
+      "code": "C-18",
+      "category": "red",
+      "nameZh": "庞贝红",
+      "nameEn": "Pompeian Red",
+      "quoteZh": "历史的回响 赋予当下新的力量",
+      "quoteEn": "A STRONGER TOMORROW",
+      "promptZh": "主题色：庞贝红（Pompeian Red）。",
+      "promptEn": "Theme color: Pompeian Red.",
+      "image": "images/colors/C-18.webp"
+    },
+    {
+      "code": "C-19",
+      "category": "purple",
+      "nameZh": "玫瑰红",
+      "nameEn": "Rose Red",
+      "quoteZh": "热烈的浪漫 永不凋零",
+      "quoteEn": "A BRIGHTER HEART",
+      "promptZh": "主题色：玫瑰红（Rose Red）。",
+      "promptEn": "Theme color: Rose Red.",
+      "image": "images/colors/C-19.webp"
+    },
+    {
+      "code": "C-20",
+      "category": "purple",
+      "nameZh": "洋红",
+      "nameEn": "Magenta",
+      "quoteZh": "自信的姿态 走向更大的世界",
+      "quoteEn": "A BOLDER YOU",
+      "promptZh": "主题色：洋红（Magenta）。",
+      "promptEn": "Theme color: Magenta.",
+      "image": "images/colors/C-20.webp"
+    },
+    {
+      "code": "C-21",
+      "category": "purple",
+      "nameZh": "珊瑚粉",
+      "nameEn": "Coral Pink",
+      "quoteZh": "海风的温柔 治愈所有疲惫",
+      "quoteEn": "A WARMER LIFE",
+      "promptZh": "主题色：珊瑚粉（Coral Pink）。",
+      "promptEn": "Theme color: Coral Pink.",
+      "image": "images/colors/C-21.webp"
+    },
+    {
+      "code": "C-22",
+      "category": "purple",
+      "nameZh": "灰粉",
+      "nameEn": "Dusty Rose",
+      "quoteZh": "温柔的力量 让日常更美好",
+      "quoteEn": "A SOFTER TOMORROW",
+      "promptZh": "主题色：灰粉（Dusty Rose）。",
+      "promptEn": "Theme color: Dusty Rose.",
+      "image": "images/colors/C-22.webp"
+    },
+    {
+      "code": "C-23",
+      "category": "purple",
+      "nameZh": "薰衣草紫",
+      "nameEn": "Lavender",
+      "quoteZh": "浪漫的宁静 让心灵自由呼吸",
+      "quoteEn": "A CALMER TOMORROW",
+      "promptZh": "主题色：薰衣草紫（Lavender）。",
+      "promptEn": "Theme color: Lavender.",
+      "image": "images/colors/C-23.webp"
+    },
+    {
+      "code": "C-24",
+      "category": "purple",
+      "nameZh": "帝王紫",
+      "nameEn": "Imperial Purple",
+      "quoteZh": "高贵的气度 成就非凡的自己",
+      "quoteEn": "A GREATER SELF",
+      "promptZh": "主题色：帝王紫（Imperial Purple）。",
+      "promptEn": "Theme color: Imperial Purple.",
+      "image": "images/colors/C-24.webp"
+    },
+    {
+      "code": "C-25",
+      "category": "warm",
+      "nameZh": "爱马仕橙",
+      "nameEn": "Hermès Orange",
+      "quoteZh": "优雅的热爱 成就更好的自己",
+      "quoteEn": "A RICHER LIFE",
+      "promptZh": "主题色：爱马仕橙（Hermès Orange）。",
+      "promptEn": "Theme color: Hermès Orange.",
+      "image": "images/colors/C-25.webp"
+    },
+    {
+      "code": "C-26",
+      "category": "warm",
+      "nameZh": "柿子橙",
+      "nameEn": "Persimmon Orange",
+      "quoteZh": "温暖的时光 总是带来好心情",
+      "quoteEn": "A WARMER SEASON",
+      "promptZh": "主题色：柿子橙（Persimmon Orange）。",
+      "promptEn": "Theme color: Persimmon Orange.",
+      "image": "images/colors/C-26.webp"
+    },
+    {
+      "code": "C-27",
+      "category": "warm",
+      "nameZh": "那不勒斯黄",
+      "nameEn": "Naples Yellow",
+      "quoteZh": "柔和的光线 让平凡的日子也变得美好",
+      "quoteEn": "A KINDER MORNING",
+      "promptZh": "主题色：那不勒斯黄（Naples Yellow）。",
+      "promptEn": "Theme color: Naples Yellow.",
+      "image": "images/colors/C-27.webp"
+    },
+    {
+      "code": "C-28",
+      "category": "warm",
+      "nameZh": "芥末黄",
+      "nameEn": "Mustard Yellow",
+      "quoteZh": "复古的格调 让生活更有质感",
+      "quoteEn": "A BRIGHTER YOU",
+      "promptZh": "主题色：芥末黄（Mustard Yellow）。",
+      "promptEn": "Theme color: Mustard Yellow.",
+      "image": "images/colors/C-28.webp"
+    },
+    {
+      "code": "C-29",
+      "category": "warm",
+      "nameZh": "赭石",
+      "nameEn": "Ochre",
+      "quoteZh": "大地的沉静 孕育永恒的美",
+      "quoteEn": "A DEEPER SELF",
+      "promptZh": "主题色：赭石（Ochre）。",
+      "promptEn": "Theme color: Ochre.",
+      "image": "images/colors/C-29.webp"
+    },
+    {
+      "code": "C-30",
+      "category": "warm",
+      "nameZh": "象牙白",
+      "nameEn": "Ivory",
+      "quoteZh": "纯粹而柔软 让心回归宁静",
+      "quoteEn": "A PURER BEAUTY",
+      "promptZh": "主题色：象牙白（Ivory）。",
+      "promptEn": "Theme color: Ivory.",
+      "image": "images/colors/C-30.webp"
+    },
+    {
+      "code": "C-31",
+      "category": "neutral",
+      "nameZh": "佩恩灰",
+      "nameEn": "Payne&#x27;s Grey",
+      "quoteZh": "冷静而深邃 沉淀思绪",
+      "quoteEn": "A CALMER MIND",
+      "promptZh": "主题色：佩恩灰（Payne&#x27;s Grey）。",
+      "promptEn": "Theme color: Payne&#x27;s Grey.",
+      "image": "images/colors/C-31.webp"
+    },
+    {
+      "code": "C-32",
+      "category": "neutral",
+      "nameZh": "炭黑",
+      "nameEn": "Charcoal Black",
+      "quoteZh": "克制而有力 现代而坚定",
+      "quoteEn": "A STRONGER SELF",
+      "promptZh": "主题色：炭黑（Charcoal Black）。",
+      "promptEn": "Theme color: Charcoal Black.",
+      "image": "images/colors/C-32.webp"
+    },
+    {
+      "code": "C-33",
+      "category": "neutral",
+      "nameZh": "暖灰",
+      "nameEn": "Warm Grey",
+      "quoteZh": "温和而耐看 让生活松弛下来",
+      "quoteEn": "A KINDER HOME",
+      "promptZh": "主题色：暖灰（Warm Grey）。",
+      "promptEn": "Theme color: Warm Grey.",
+      "image": "images/colors/C-33.webp"
+    },
+    {
+      "code": "C-34",
+      "category": "neutral",
+      "nameZh": "奶油白",
+      "nameEn": "Cream White",
+      "quoteZh": "轻柔而纯净 留下呼吸感",
+      "quoteEn": "A PURER BEAUTY",
+      "promptZh": "主题色：奶油白（Cream White）。",
+      "promptEn": "Theme color: Cream White.",
+      "image": "images/colors/C-34.webp"
+    },
+    {
+      "code": "C-35",
+      "category": "neutral",
+      "nameZh": "石板灰",
+      "nameEn": "Slate Gray",
+      "quoteZh": "理性而利落 充满建筑感",
+      "quoteEn": "A CLEARER VISION",
+      "promptZh": "主题色：石板灰（Slate Gray）。",
+      "promptEn": "Theme color: Slate Gray.",
+      "image": "images/colors/C-35.webp"
+    },
+    {
+      "code": "C-36",
+      "category": "neutral",
+      "nameZh": "米驼色",
+      "nameEn": "Taupe",
+      "quoteZh": "自然而高级 温柔又克制",
+      "quoteEn": "A SOFTER LIFE",
+      "promptZh": "主题色：米驼色（Taupe）。",
+      "promptEn": "Theme color: Taupe.",
+      "image": "images/colors/C-36.webp"
+    }
+  ]
+}

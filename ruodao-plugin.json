@@ -1,0 +1,57 @@
+{
+  "id": "com.ruodao.handraw-style",
+  "name": "手绘风画廊（Handraw Style）",
+  "version": "1.0.1",
+  "apiVersion": ">=0.1.0 <0.2.0",
+  "description": "手绘风编号风格画廊：366 种风格 + 167 种排版图型 + 36 种经典单色，看图挑风格、选模型直接出图，作品可分享到插件案例广场。图片生成复用桌面端「模型管理」里已配置的模型，插件不保存任何密钥。",
+  "requires": {
+    "capabilities": {
+      "required": {
+        "commands": "0.1.0"
+      }
+    }
+  },
+  "permissions": [
+    "network"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "id": "com.ruodao.handraw.doctor",
+        "title": "自检（风格库完整性）",
+        "description": "检查风格库数据文件、分组数量与参考图基址，返回 366 风格 / 167 图型 / 36 单色的实际条数。",
+        "action": {
+          "type": "process",
+          "command": "node",
+          "args": ["bin/handraw.mjs", "doctor"],
+          "cwd": ".",
+          "timeoutMs": 30000
+        }
+      },
+      {
+        "id": "com.ruodao.handraw.catalog",
+        "title": "读取风格库",
+        "description": "返回风格库数据。stdin 传 { section: \"meta\"|\"styles\"|\"layouts\"|\"colors\"|\"all\", group?, q?, limit? }；meta 只返回分组与数量，用于首屏快速渲染。",
+        "action": {
+          "type": "process",
+          "command": "node",
+          "args": ["bin/handraw.mjs", "catalog"],
+          "cwd": ".",
+          "timeoutMs": 30000
+        }
+      },
+      {
+        "id": "com.ruodao.handraw.prompt",
+        "title": "组装提示词",
+        "description": "按风格编号组装中英双语提示词。stdin 传 { styleCode, theme, layoutCode?, colorCode?, aspect?, mode?, modelName?, modelOrigin? }，按宿主模型名自动选择激活策略（name-first / traits-first / traits+reference）。",
+        "action": {
+          "type": "process",
+          "command": "node",
+          "args": ["bin/handraw.mjs", "prompt"],
+          "cwd": ".",
+          "timeoutMs": 30000
+        }
+      }
+    ]
+  }
+}

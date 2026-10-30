@@ -1,0 +1,35 @@
+{
+  "route": "handraw-style",
+  "label": "手绘风画廊",
+  "description": "366 种手绘风格的编号画廊：按 FA–FI 九大类挑风格，选模型直接出图，作品可分享到插件案例广场。",
+  "icon": "Palette",
+  "version": "1.0.1",
+  "author": "若道",
+  "capabilities": ["style-gallery", "image-generation", "prompt-engineering", "case-sharing"],
+  "caseSharing": {
+    "enabled": true,
+    "caseTypes": ["作品展示"],
+    "mediaTypes": ["image"],
+    "fields": ["prompt", "parameters"]
+  },
+  "configFields": [
+    {
+      "key": "RUODAO_HANDRAW_IMG_BASE",
+      "label": "风格参考图基址（留空 = 官方 jsdelivr 镜像）",
+      "placeholder": "https://cdn.jsdelivr.net/gh/yang0/handraw-style@master",
+      "secret": false
+    },
+    {
+      "key": "RUODAO_HANDRAW_ASPECT",
+      "label": "默认画面比例（1:1 / 4:3 / 3:4 / 16:9 / 9:16）",
+      "placeholder": "1:1",
+      "secret": false
+    },
+    {
+      "key": "RUODAO_HANDRAW_DEFAULT_STYLE",
+      "label": "默认风格编号（打开画廊时预选，留空 = 不预选）",
+      "placeholder": "FA-001",
+      "secret": false
+    }
+  ]
+}

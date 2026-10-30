@@ -1,0 +1,32 @@
+{
+  "displayName": "手绘风画廊",
+  "slug": "handraw-style",
+  "summary": "366 种手绘风格 + 167 种排版图型 + 36 款经典单色，按九大类铺成缩略图画廊：点卡片看编号与特征词，右侧选模型直接出图，成图一键分享到插件案例。作品与提示词存在本机，不保存任何 API Key。",
+  "description": "上游是开源项目 yang0/handraw-style（366 风格 / 167 图型 / 36 单色）。原本的工作流是「报编号 → 拿一段提示词 → 自己复制去 Midjourney 或 SD 出图」；这个插件把「选」和「出」都搬进了工作台，中间的复制粘贴全部省掉。\n\n【四个画廊】\n• 风格画廊：366 张缩略图按 FA–FI 九大类铺开，支持分组筛选（带数量）、1x–4x 尺寸切换、按编号 / 风格名 / 作者搜索，点卡片看编号、作者与特征词；\n• 图型画廊：社媒卡 23、信息图 36、漫画分镜 71、IP 设计 13、电商 24，点一下直接带入创作；\n• 色彩画廊：36 款经典单色分六大色系，点一下锁定画面基调；\n• 我的创作：本机最近 40 条生成记录，可打开原图、可一键分享。\n\n【选完就能出图】\n右侧创作面板选「模型管理」里已配好的图片模型，填主题、选比例（默认 1:1），直接生成——不用离开桌面端，也不用自己拼提示词。提示词按模型自适应：gpt-image-2 系走 name-first（致敬作者 + 风格英文名，特征词作补充）；gemini / imagen / flux / nano-banana / seedream 等走 traits+reference（核心特征词 + 官方参考图兜底，工作台会把风格图当参考图传入）。\n\n【沉淀与复用】\n成图可一键分享到「插件案例」，别人点「复用」会自动带回同款风格与主题；提示词不再散落在聊天记录里。\n\n【设置】\n参考图基址（默认官方 jsdelivr 镜像，内网 / 离线环境可换自建镜像）、默认比例、默认风格编号三项，写在插件数据文件里，与「我的创作」共用但不互相覆盖。\n\n【凭据安全】\n插件不保存任何 API Key——生图直接用宿主「模型管理」里已启用的图片模型，凭据由桌面端注入。风格库、图型库、色彩库都是本地 JSON 数据（styles / layouts / colors），断网也能浏览与选风格。",
+  "author": "Ruodao",
+  "category": "Media",
+  "tags": [
+    "手绘",
+    "插画",
+    "生图",
+    "提示词",
+    "风格库",
+    "绘本",
+    "国风",
+    "排版",
+    "配色"
+  ],
+  "version": "1.0.1",
+  "repositoryUrl": "https://github.com/yang0/handraw-style",
+  "sourceRef": "v1.9.2",
+  "pluginPath": "",
+  "permissions": [
+    "network"
+  ],
+  "capabilities": [
+    "commands"
+  ],
+  "hasMcpServers": false,
+  "hasSkills": false,
+  "readme": "# 手绘风画廊（Handraw Style）· 若道插件\n\n> 项目来自于 [yang0/handraw-style](https://github.com/yang0/handraw-style) · 当前同步上游 **v1.9.2**\n\n把开源项目 [yang0/handraw-style](https://github.com/yang0/handraw-style)（366 种手绘风格 + 167 种排版图型 + 36 种经典单色）做成若道桌面端里**能看图、能直接出图、能分享案例**的插件工作台。\n\n## 它解决什么\n\n原版 skill 的工作方式是：报编号 → 拿到一段提示词 → 自己复制去 Midjourney / SD 出图。插件把中间的「选」和「出」都搬进工作台：\n\n| | 原版 skill | 本插件 |\n|---|---|---|\n| 选风格 | 记编号、翻 Markdown 图鉴 | 366 张缩略图按 FA–FI 九大类铺开，点卡片看编号/作者/特征词 |\n| 出图 | 复制提示词去第三方工具 | 右侧面板选模型（复用「模型管理」里已配好的图片模型）直接生成 |\n| 沉淀 | 提示词散在聊天记录里 | 我的创作保留最近 40 条，成图可一键分享到插件案例 |\n\n## 界面\n\n![风格画廊](assets/screenshot-gallery.png)\n\n- **风格画廊**：分组筛选（带数量）、1x–4x 尺寸切换、搜索编号/风格名/作者，点击卡片选中\n- **图型画廊**：社媒卡 23 / 信息图 36 / 漫画分镜 71 / IP 设计 13 / 电商 24，点一下即带入创作\n- **色彩画廊**：36 款经典单色，六大色系，点一下锁定画面基调\n- **我的创作**：本机生成记录，可分享、可打开原图\n- **案例广场**：所有分享过作品的用户，点「复用」自动带回同款风格与主题\n\n![选风格到出图](assets/screenshot-result.png)\n\n![案例广场](assets/screenshot-cases.png)\n\n## 三件事分别落在哪\n\n| 能力 | 实现位置 |\n|---|---|\n| 风格库数据 | `data/styles.json`（366）、`data/layouts.json`（167）、`data/colors.json`（36） |\n| 提示词组装 | `lib/prompt.mjs`，由命令 `com.ruodao.handraw.prompt` 暴露 |\n| 数据读取 | 命令 `com.ruodao.handraw.catalog`（`section: meta / styles / layouts / colors`） |\n| 环境自检 | 命令 `com.ruodao.handraw.doctor` |\n| 看图界面 / 出图 / 分享 | 桌面端 `src/components/HandrawStyleWorkbench.tsx`（走宿主 `generateImage`、`ruodaoUpload`、`ruodaoPluginCaseCreate`） |\n\n**插件不保存任何 API Key**：生图直接用桌面端「模型管理」里已启用的图片模型，凭据由宿主注入。\n\n## 设置\n\n工作台右上角「设置」：\n\n| 项 | 默认 | 作用 |\n|---|---|---|\n| 参考图基址 | 官方 jsdelivr 镜像 | 缩略图与参考图来源；内网/离线环境可换自建镜像 |\n| 默认比例 | 1:1 | 打开创作面板时的初始比例 |\n| 默认风格编号 | 空 | 打开画廊时预选某个风格（如 `FA-001`） |\n\n设置写在宿主的插件数据文件里（`plugins-ui-data/handraw-style.json`），与「我的创作」共用同一份，互不覆盖。\n\n## 提示词策略（随模型自适应）\n\n`lib/prompt.mjs` 按宿主模型名推断：\n\n- `gpt-image-2` 系 → **name-first**：优先「致敬作者 + 风格英文名」，特征词作补充（上游已标定 227 个风格）\n- `gemini / imagen / flux / nano-banana / seedream` 等 → **traits+reference**：核心特征词 + 官方参考图兜底（工作台会把风格图下载下来作为参考图传入）\n- 其它模型 → **traits-first**：走中文核心特征词\n\n两条固定约束：纯图模式禁止画面出现文字；纯图模式叠加文字型版式（社媒卡/信息图/电商）时，明确要求文字区域用图形占位。\n\n## 安装（本地调试）\n\n```bash\ncd product/ruodao-desktop && npm run build:electron && npm run dev\n```\n\n把本目录作为本地插件安装后，侧边栏会出现「手绘风画廊」。市场提交用 `market-submission.json`。\n\n## 出处与许可\n\n风格编号、中文特征词、参考图来自 **yang0/handraw-style**（v1.9.2，允许自由使用/修改/商用，需保留作者署名与原仓库地址）。参考图默认从 `https://cdn.jsdelivr.net/gh/yang0/handraw-style@master` 加载，可在插件设置里改基址。\n\nv1.9.2 新增唐山皮影（FE-068），风格总数 366。"
+}
